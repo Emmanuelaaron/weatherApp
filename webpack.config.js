@@ -1,6 +1,6 @@
 const path = require('path');
-// const autoprefixer = require('autoprefixer');
-// const precss = require('precss')
+const autoprefixer = require('autoprefixer');
+const precss = require('precss');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -31,16 +31,16 @@ module.exports = {
         }, {
           loader: 'postcss-loader', // Run post css actions
           options: {
-            plugins: function () { // post css plugins, can be exported to postcss.config.js
+            plugins() { // post css plugins, can be exported to postcss.config.js
               return [
-                require('precss'),
-                require('autoprefixer')
+                precss,
+                autoprefixer,
               ];
-            }
-          }
+            },
+          },
         }, {
-          loader: 'sass-loader' // compiles Sass to CSS
-        }]
+          loader: 'sass-loader', // compiles Sass to CSS
+        }],
       },
       {
         test: /\.(jpg|png)$/,
