@@ -1,5 +1,5 @@
 import myInputForm from '../components/inputForm';
-import bodyContent from '../components/weatherData'
+import bodyContent from '../components/weatherData';
 
 const body = () => {
   const fullBody = document.createElement('div');
@@ -11,11 +11,19 @@ const body = () => {
     'pt-4', 'd-flex',
     'justify-content-end',
   );
-  header.id = 'header'
+  header.id = 'header';
+
+  const myLoaderDiv = document.createElement('div');
+  myLoaderDiv.classList.add(
+    'col-12', 'd-flex',
+    'align-items-center',
+    'justify-content-center',
+  );
 
   header.appendChild(myInputForm());
   fullBody.appendChild(header);
-  fullBody.appendChild(bodyContent())
+  fullBody.appendChild(myLoaderDiv);
+  fullBody.appendChild(bodyContent());
   return fullBody;
 };
 

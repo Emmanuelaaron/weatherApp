@@ -11,16 +11,14 @@ const myInputForm = () => {
   const button = document.createElement('button');
   button.innerText = 'search';
   button.classList.add('btn', 'btn-primary');
-  button.addEventListener('click', (e) =>{
-      e.preventDefault()
-      const cityName = myInput.value
-      console.log(cityName)
-      apiCall(cityName)
-      const formHeader = document.getElementById('header')
-      formHeader.innerHTML = ''
-      formHeader.appendChild(myInputForm())
-
-  })
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    const cityName = myInput.value;
+    apiCall(cityName);
+    const formHeader = document.getElementById('header');
+    formHeader.innerHTML = '';
+    formHeader.appendChild(myInputForm());
+  });
 
   myForm.appendChild(myInput);
   myForm.appendChild(button);
