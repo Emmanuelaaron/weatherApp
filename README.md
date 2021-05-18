@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://emmanuelaaron.github.io/weatherApp/dist/)
 
 
 ## Getting Started
