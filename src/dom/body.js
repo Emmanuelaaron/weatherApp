@@ -1,5 +1,5 @@
-import myInputForm from '../components/inputForm';
-import bodyContent from '../components/weatherData';
+import myInputForm from './inputForm';
+import bodyContent from './weatherData';
 
 const body = () => {
   const fullBody = document.createElement('div');
