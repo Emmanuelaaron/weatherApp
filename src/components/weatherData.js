@@ -6,19 +6,22 @@ const bodyContent = () => {
   );
 
   const cityName = document.createElement('div');
+  const myCity = document.createElement('p');
   cityName.classList.add(
     'text-muted', 'col-6',
     'text-center', 'display-3',
   );
-  cityName.innerHTML = 'Welcome To myWeather';
-  cityName.id = 'cityName';
+
+  cityName.id = 'cityDiv';
+  myCity.innerHTML = 'Welcome To myWeather';
+  myCity.id = 'cityName';
 
   const tableSide = document.createElement('div');
   tableSide.classList.add('text-light',
-    'text-center', 'bg-ifo',
-    'col-6');
+    'text-center', 'bg-ifo');
   tableSide.innerHTML = 'Search for any city and get the weather Stats';
   tableSide.id = 'myTable';
+  cityName.appendChild(myCity);
   fullBodyContent.appendChild(cityName);
   fullBodyContent.appendChild(tableSide);
   return fullBodyContent;

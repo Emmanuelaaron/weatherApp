@@ -7,8 +7,9 @@ const myResultsTable = (hum, press, temp) => {
   trhead.classList.add('success');
 
   const tempr = document.createElement('th');
-  tempr.innerHTML = 'Temp(celsius)';
+  tempr.innerHTML = 'Temp(°C)';
   tempr.classList.add('text-light');
+  tempr.id = 'tempDegrees';
 
   const humi = document.createElement('th');
   humi.innerHTML = 'Humidity';
@@ -24,6 +25,7 @@ const myResultsTable = (hum, press, temp) => {
 
   const tempData = document.createElement('td');
   tempData.innerHTML = temp;
+  tempData.id = 'tempMetric';
 
   const humiData = document.createElement('td');
   humiData.innerHTML = hum;
