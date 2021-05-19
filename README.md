@@ -2,6 +2,8 @@
 
 > This is a javascript project show casing an implementaion of fetching data from a weather API and displaying it in the browser
 
+![screenshot](images/display.png)
+
 ## Built With
 
 - CSS
@@ -18,6 +20,7 @@
 ## Getting Started
 - Clone this repo on your local machine
 - Navigate to this project on your machine
+- ```cd weatherapp```
 - On your command line on the root directory of your project, run these commands.
 
 - ```npm install```
