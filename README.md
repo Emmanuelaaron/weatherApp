@@ -2,7 +2,7 @@
 
 > This is a javascript project show casing an implementaion of fetching data from a weather API and displaying it in the browser
 
-![screenshot](images/display.png)
+![screenshot](src/images/display.png)
 
 ## Built With
 
