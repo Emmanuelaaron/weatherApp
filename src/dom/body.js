@@ -4,6 +4,7 @@ import bodyContent from './weatherData';
 const body = () => {
   const fullBody = document.createElement('div');
   fullBody.classList.add('vh-100', 'fullBody');
+  fullBody.id = 'myBody';
 
   const header = document.createElement('div');
   header.classList.add(
