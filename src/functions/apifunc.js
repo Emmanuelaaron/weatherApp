@@ -1,5 +1,5 @@
 import apiRes from '../dom/apiResolution';
-import {myBackgroundImage} from '../functions/temp'
+import { myBackgroundImage } from './temp';
 
 const apiCall = (name) => {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=56f9e29028ed4ced524350e57e63b863`,
@@ -7,8 +7,7 @@ const apiCall = (name) => {
     .then((response) => response.json())
     .then((response) => {
       apiRes(name, response);
-      console.log('gghgh')
-      myBackgroundImage(response.main.temp)
+      myBackgroundImage(response.main.temp);
     });
 };
 

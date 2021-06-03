@@ -9,7 +9,7 @@ const bodyContent = () => {
   const myCity = document.createElement('p');
   cityName.classList.add(
     'text-white', 'bg-dark', 'col-6',
-    'text-center', 'display-3', 'mr-5'
+    'text-center', 'display-3', 'mr-5',
   );
 
   cityName.id = 'cityDiv';

@@ -1,24 +1,22 @@
-import {celsiusToFahrenheit} from '../functions/temp';
+import { celsiusToFahrenheit } from '../functions/temp';
 import myResultsTable from './table';
 
 const apiRes = (name, response) => {
-
   const cityName = document.getElementById('cityName');
   cityName.innerHTML = name;
 
   const myTable = document.getElementById('myTable');
   myTable.innerHTML = '';
 
-  const formHeader = document.getElementById('headerForm')
+  const formHeader = document.getElementById('headerForm');
 
-  const dButton = document.createElement('button')
-  dButton.innerText = 'Display in °F'
-  dButton.id = 'tempButton'
-  dButton.classList.add('btn', 'btn-primary', 'ml-2')
+  const dButton = document.createElement('button');
+  dButton.innerText = 'Display in °F';
+  dButton.id = 'tempButton';
+  dButton.classList.add('btn', 'btn-primary', 'ml-2');
 
   dButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const displayLink = document.getElementById('temp');
     const tempDegree = document.getElementById('tempDegrees');
     const tempMetric = document.getElementById('tempMetric');
     if (dButton.innerText === 'display in °F') {
@@ -32,7 +30,7 @@ const apiRes = (name, response) => {
     }
   });
 
-  formHeader.appendChild(dButton)
+  formHeader.appendChild(dButton);
 
   myTable.appendChild(
     myResultsTable(

@@ -3,7 +3,7 @@ import apiCall from '../functions/apifunc';
 const myInputForm = () => {
   const myForm = document.createElement('form');
   myForm.classList.add('form-inline');
-  myForm.id = 'headerForm'
+  myForm.id = 'headerForm';
 
   const myInput = document.createElement('input');
   myInput.classList.add('form-control', 'mr-2');
