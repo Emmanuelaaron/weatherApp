@@ -8,8 +8,8 @@ const bodyContent = () => {
   const cityName = document.createElement('div');
   const myCity = document.createElement('p');
   cityName.classList.add(
-    'text-muted', 'col-6',
-    'text-center', 'display-3',
+    'text-white', 'bg-dark', 'col-6',
+    'text-center', 'display-3', 'mr-5'
   );
 
   cityName.id = 'cityDiv';
@@ -17,8 +17,8 @@ const bodyContent = () => {
   myCity.id = 'cityName';
 
   const tableSide = document.createElement('div');
-  tableSide.classList.add('text-light',
-    'text-center', 'bg-ifo');
+  tableSide.classList.add('text-white', 'bg-dark',
+    'text-center');
   tableSide.innerHTML = 'Search for any city and get the weather Stats';
   tableSide.id = 'myTable';
   cityName.appendChild(myCity);
